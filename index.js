@@ -81,7 +81,7 @@ function main() {
     webpackConfig: path.resolve(__dirname, 'madge.webpack.js'),
     tsConfig: fs.existsSync(tsConfigPath) ? tsConfigPath : undefined,
     excludeRegExp: [searchDirs, ...exclude],
-    fileExtensions: ['js', 'jsx', 'ts', 'tsx']
+    fileExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx']
   }).then((res) => {
     const tree = res.obj()
     const entrypoints = Object.keys(tree).filter((f) => {
