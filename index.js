@@ -99,6 +99,7 @@ function main() {
     }
     pruneTree(entrypoints, tree)
     const unusedFilenames = Object.keys(tree)
+    console.log("boom")
     if (!unusedFilenames.length) {
       console.log('No unused files!')
     } else {
